@@ -1,20 +1,20 @@
-# ZIPBOMB
-2048 yottabyte Zip Bomb
+# 压缩炸弹（ZIPBOMB）
+2048尧字节（yottabyte）压缩炸弹
 
-This zip bomb uses overlapping files and recursion to achieve 7 layers with 256 files each, with the last being a 32GB file.
+该压缩炸弹利用重叠文件和递归机制，构建了7个层级，每个层级包含256个文件，其中最后一个文件为32吉字节（GB）。
 
-It is only 266 KB on disk.
+它在磁盘上的实际大小仅为266千字节（KB）。
 
-(overlapping files are broken meaning the zip bomb is "corrupted" but you can still read them at least in Windows.)
+（重叠文件存在损坏，这意味着该压缩炸弹处于“损坏”状态，但至少在Windows系统中，你仍可读取这些文件。）
 
-If you extract 32-256^7.zip once you will be fine which is why I made 32-256.zip which is 8TB decompressed and if you extract it once you're done for
+如果你只解压一次32-256^7.zip，通常不会有问题；这也是我制作32-256.zip的原因——该文件解压后大小为8太字节（TB），一旦解压，你的系统基本就完了。
 
-(file sizes are spoofed so that your OS won't think that you don't have enough disk space)
+（文件大小经过伪造，因此你的操作系统不会提示“磁盘空间不足”。）
 
-NOTE: 32-256-zipped.zip contains ONE FILE, 32-256.zip which is the actual bomb being <40 MB in size and decompresses to 8TB
+注：32-256-zipped.zip中仅包含一个文件，即32-256.zip——这才是真正的压缩炸弹，其大小小于40兆字节（MB），解压后可达8太字节（TB）。
 
-64x4096-Z.zip contains ONE FILE, 64x4096.zip which is 77 MB and is kind of dangerous
+64x4096-Z.zip中也仅包含一个文件，即64x4096.zip，该文件大小为77兆字节（MB），且具有一定危险性。
 
-(I had to zip it twice because of file size limits)
+（我不得不将它压缩两次，原因是受文件大小限制。）
 
-* 1TB = 1,099,511,627,776 bytes
+* 1太字节（TB）= 1,099,511,627,776字节
